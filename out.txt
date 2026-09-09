@@ -1,0 +1,22 @@
+Hit:1 https://linux.teamviewer.com/deb stable InRelease
+Get:2 https://download.docker.com/linux/ubuntu lunar InRelease [48.8 kB]
+Hit:3 https://packages.microsoft.com/repos/code stable InRelease
+Ign:4 http://archive.ubuntu.com/ubuntu lunar InRelease
+Hit:5 https://dl.google.com/linux/chrome-stable/deb stable InRelease
+Ign:6 http://archive.ubuntu.com/ubuntu lunar-updates InRelease
+Ign:7 http://archive.ubuntu.com/ubuntu lunar-backports InRelease
+Ign:9 http://archive.ubuntu.com/ubuntu lunar-security InRelease
+Ign:10 https://ppa.launchpadcontent.net/nginx/stable/ubuntu lunar InRelease
+Err:11 http://archive.ubuntu.com/ubuntu lunar Release
+  404  Not Found [IP: 2620:2d:4000:1::101 80]
+Hit:8 https://hub-dist.unity3d.com/artifactory/hub-debian-prod-local stable InRelease
+Hit:12 https://ppa.launchpadcontent.net/ztefn/haguichi-stable/ubuntu lunar InRelease
+Err:13 http://archive.ubuntu.com/ubuntu lunar-updates Release
+  404  Not Found [IP: 2620:2d:4000:1::101 80]
+Err:14 https://ppa.launchpadcontent.net/nginx/stable/ubuntu lunar Release
+  404  Not Found [IP: 2620:2d:4000:1009::1ed 443]
+Err:15 http://archive.ubuntu.com/ubuntu lunar-backports Release
+  404  Not Found [IP: 2620:2d:4000:1::101 80]
+Err:16 http://archive.ubuntu.com/ubuntu lunar-security Release
+  404  Not Found [IP: 2620:2d:4000:1::101 80]
+Reading package lists...

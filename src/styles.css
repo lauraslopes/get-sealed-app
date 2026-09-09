@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; min-height: 100%; width: 100%; }
+body { background: #f9f8f6; color: #1a1a1a; font-family: Inter, sans-serif; overscroll-behavior: none; }
+button, a, input, textarea { font: inherit; }
+a { color: inherit; text-decoration: none; }
+.material-symbols-outlined { font-family: 'Material Symbols Outlined'; font-size: 1.25rem; vertical-align: middle; }
+.app-shell { min-height: 100vh; padding-bottom: 5rem; }
+.page { width: min(100%, 28rem); margin: auto; padding: 1rem; }
+.topbar { height: 4rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e5e2dc; background: rgba(249,248,246,.94); position: sticky; top: 0; z-index: 5; }
+.topbar h1 { margin: 0; font: 700 1.25rem 'Space Grotesk', sans-serif; }
+.bottom-nav { position: fixed; bottom: 0; left: 0; right: 0; height: 4rem; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); background: rgba(249,248,246,.95); border-top: 1px solid #e5e2dc; z-index: 10; }
+.bottom-nav a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .2rem; color: #5e5e5e; font-size: .7rem; text-transform: uppercase; }
+.bottom-nav a.active, .study-tabs a.active { color: #003c90; font-weight: 700; }
+.study-tabs { display: flex; border-bottom: 1px solid #e5e2dc; margin-bottom: 1.5rem; }
+.study-tabs a { flex: 1; padding: .6rem .15rem; text-align: center; font: 500 .68rem 'Space Grotesk', sans-serif; letter-spacing: .08em; color: #5e5e5e; }
+.study-tabs a.active { border-bottom: 2px solid #003c90; }
+.card { background: #fff; border: 1px solid #e5e2dc; border-radius: .5rem; padding: 1rem; box-shadow: 0 1px 4px rgba(0,0,0,.04); }
+.stack { display: grid; gap: .75rem; }
+button { cursor: pointer; border: 0; }
+.primary-button { width: 100%; padding: .9rem 1rem; background: #003c90; color: #fff; border-radius: .35rem; font-weight: 700; }
+.muted { color: #5e5e5e; }
+.scripture { font: 400 1.125rem/1.6 Newsreader, serif; }
+.progress-track { height: .35rem; background: #e1e2eb; border-radius: 99px; overflow: hidden; }
+.progress-fill { height: 100%; background: #0f52ba; }
+.grid-paper { background-image: linear-gradient(to right, #e5e2dc 1px, transparent 1px), linear-gradient(to bottom, #e5e2dc 1px, transparent 1px); background-size: 24px 24px; }
+textarea { width: 100%; min-height: 13rem; border: 1px solid #737784; padding: .75rem; background: #fff; resize: vertical; }
+@media (min-width: 700px) { .page { padding-top: 2rem; } }
