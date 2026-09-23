@@ -1,5 +1,6 @@
 const STORAGE_KEY = 'revelation-memorizer:v1';
-const DEFAULT_STATE = { language: 'EN', completed: {}, settings: { dailyGoal: 2 } };
+// A missing language means the person has not completed the first-run choice yet.
+const DEFAULT_STATE = { language: null, completed: {}, settings: { dailyGoal: 2 } };
 
 export function loadProgress() {
   try {

@@ -20,16 +20,17 @@ export default function App() {
     return next;
   });
   const resetProgress = () => setProgress(current => ({ ...current, completed: {} }));
+  const requireLanguage = element => progress.language ? element : <Navigate to="/welcome" replace />;
   return <Routes>
-    <Route path="/" element={<Navigate to="/welcome" replace />} />
+    <Route path="/" element={<Navigate to={progress.language ? '/study' : '/welcome'} replace />} />
     <Route path="/welcome" element={<WelcomeScreen language={progress.language} setLanguage={setLanguage} />} />
-    <Route path="/study" element={<StudyOverviewScreen progress={progress} />} />
-    <Route path="/chapter/:chapterId" element={<VerseSelectionScreen progress={progress} />} />
-    <Route path="/activity/read" element={<ActivityReadScreen />} />
-    <Route path="/activity/blanks" element={<ActivityBlanksScreen />} />
-    <Route path="/activity/first-letter" element={<ActivityFirstLetterScreen />} />
-    <Route path="/activity/write" element={<ActivityWriteScreen completeVerse={completeVerse} />} />
-    <Route path="/profile" element={<ProfileScreen language={progress.language} setLanguage={setLanguage} progress={progress} resetProgress={resetProgress} />} />
-    <Route path="*" element={<Navigate to="/study" replace />} />
+    <Route path="/study" element={requireLanguage(<StudyOverviewScreen progress={progress} language={progress.language} />)} />
+    <Route path="/chapter/:chapterId" element={requireLanguage(<VerseSelectionScreen progress={progress} language={progress.language} />)} />
+    <Route path="/activity/read" element={requireLanguage(<ActivityReadScreen language={progress.language} />)} />
+    <Route path="/activity/blanks" element={requireLanguage(<ActivityBlanksScreen language={progress.language} />)} />
+    <Route path="/activity/first-letter" element={requireLanguage(<ActivityFirstLetterScreen language={progress.language} />)} />
+    <Route path="/activity/write" element={requireLanguage(<ActivityWriteScreen completeVerse={completeVerse} language={progress.language} />)} />
+    <Route path="/profile" element={requireLanguage(<ProfileScreen language={progress.language} setLanguage={setLanguage} progress={progress} resetProgress={resetProgress} />)} />
+    <Route path="*" element={<Navigate to="/" replace />} />
   </Routes>;
 }

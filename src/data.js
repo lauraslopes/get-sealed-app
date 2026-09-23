@@ -1,8 +1,8 @@
 export const TRANSLATIONS = [
-  { code: 'EN', name: 'English', tag: 'NVI', desc: 'NVI translation', bibleId: import.meta.env.VITE_YOUVERSION_BIBLE_EN },
-  { code: 'PT', name: 'Português (Brasil)', tag: 'NVI', desc: 'NVI translation', bibleId: import.meta.env.VITE_YOUVERSION_BIBLE_PT },
-  { code: 'FR', name: 'Français', tag: 'NVI', desc: 'NVI translation', bibleId: import.meta.env.VITE_YOUVERSION_BIBLE_FR },
-  { code: 'ES', name: 'Español', tag: 'NVI', desc: 'NVI translation', bibleId: import.meta.env.VITE_YOUVERSION_BIBLE_ES },
+  { code: 'EN', name: 'English', tag: 'NVI', desc: 'New International Version', bibleId: import.meta.env.VITE_YOUVERSION_BIBLE_EN },
+  { code: 'PT', name: 'Português (Brasil)', tag: 'NVI', desc: 'Nova Versão Internacional', bibleId: import.meta.env.VITE_YOUVERSION_BIBLE_PT },
+  { code: 'FR', name: 'Français', tag: 'NVI', desc: 'Nouvelle Version Internationale', bibleId: import.meta.env.VITE_YOUVERSION_BIBLE_FR },
+  { code: 'ES', name: 'Español', tag: 'NVI', desc: 'Nueva Versión Internacional', bibleId: import.meta.env.VITE_YOUVERSION_BIBLE_ES },
 ];
 
 export const CHAPTERS = [
