@@ -17,7 +17,9 @@ export default function App() {
   const completeVerse = verseId => setProgress(current => {
     let next = current;
     ['read', 'blanks', 'first-letter', 'write'].forEach(stage => { next = markStageComplete(next, verseId, stage); });
-    return next;
+    const now = new Date();
+    const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    return { ...next, studyDays: [...new Set([...(next.studyDays || []), today])] };
   });
   const resetProgress = () => setProgress(current => ({ ...current, completed: {} }));
   const requireLanguage = element => progress.language ? element : <Navigate to="/welcome" replace />;
