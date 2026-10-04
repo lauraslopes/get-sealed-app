@@ -1,20 +1,16 @@
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import BottomNav from '../components/BottomNav';
-import { CHAPTERS, SAMPLE_VERSES } from '../data';
+import { CHAPTERS } from '../data';
 import { getUiCopy } from '../i18n';
 import { isVerseMemorized } from '../storage';
 
-export default function VerseSelectionScreen({ progress, language }) {
+export default function VerseSelectionScreen({ progress, language, translation }) {
   const { chapterId = '1' } = useParams();
   const navigate = useNavigate();
   const copy = getUiCopy(language);
   const chapter = CHAPTERS[Number(chapterId) - 1] || CHAPTERS[0];
-  const verses = Number(chapterId) === 1
-    ? Object.entries(SAMPLE_VERSES)
-    : Array.from({ length: chapter.verses }, (_, index) => [
-      `${chapterId}:${index + 1}`,
-      copy.verseLoading,
-    ]);
+  const chapterVerses = Object.entries(translation?.verses || {}).filter(([id]) => id.startsWith(`${chapterId}:`));
+  const verses = chapterVerses;
 
   return (
     <div className="app-shell grid-paper">

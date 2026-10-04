@@ -43,6 +43,8 @@ const UI_COPY = {
     firstLetterTab: '1ST LTR',
     writeTab: 'WRITE',
     verseLoading: 'Verse text will be loaded from YouVersion.',
+    confirmLanguage: 'Download translation and continue', downloadingTitle: 'Preparing Revelation for offline study', downloadingProgress: 'Downloaded verses:', downloadingHelp: 'Keep this page open while the verses download.', downloadProblem: 'Could not download the translation', downloadFailed: 'The download failed. Please try again.', needInternet: 'Connect to the internet to download this translation.', connectToDownload: 'Reconnect to the internet and retry.', retry: 'Retry',
+    downloadChapter: 'Download', notDownloaded: 'NOT DOWNLOADED', chapterNotDownloaded: 'not downloaded', downloadingChapter: 'DOWNLOADING',
   },
   PT: {
     welcomeTitle: 'Vamos ser selados!',
@@ -88,6 +90,8 @@ const UI_COPY = {
     firstLetterTab: '1ª LETRA',
     writeTab: 'ESCREVER',
     verseLoading: 'O texto do versículo será carregado do YouVersion.',
+    confirmLanguage: 'Baixar tradução e continuar', downloadingTitle: 'Preparando Apocalipse para estudo offline', downloadingProgress: 'Versículos baixados:', downloadingHelp: 'Mantenha esta página aberta enquanto os versículos são baixados.', downloadProblem: 'Não foi possível baixar a tradução', downloadFailed: 'O download falhou. Tente novamente.', needInternet: 'Conecte-se à internet para baixar esta tradução.', connectToDownload: 'Reconecte-se à internet e tente novamente.', retry: 'Tentar novamente',
+    downloadChapter: 'Baixar', notDownloaded: 'NÃO BAIXADO', chapterNotDownloaded: 'não baixado', downloadingChapter: 'BAIXANDO',
   },
   FR: {
     welcomeTitle: 'Soyons scellés !',
@@ -133,6 +137,8 @@ const UI_COPY = {
     firstLetterTab: '1RE LETTRE',
     writeTab: 'ÉCRIRE',
     verseLoading: 'Le texte du verset sera chargé depuis YouVersion.',
+    confirmLanguage: 'Télécharger la traduction et continuer', downloadingTitle: 'Préparation de l’Apocalypse pour une étude hors ligne', downloadingProgress: 'Versets téléchargés :', downloadingHelp: 'Gardez cette page ouverte pendant le téléchargement.', downloadProblem: 'Téléchargement impossible', downloadFailed: 'Échec du téléchargement. Réessayez.', needInternet: 'Connectez-vous à Internet pour télécharger cette traduction.', connectToDownload: 'Reconnectez-vous à Internet et réessayez.', retry: 'Réessayer',
+    downloadChapter: 'Télécharger', notDownloaded: 'NON TÉLÉCHARGÉ', chapterNotDownloaded: 'non téléchargé', downloadingChapter: 'TÉLÉCHARGEMENT',
   },
   ES: {
     welcomeTitle: '¡Seamos sellados!',
@@ -178,6 +184,8 @@ const UI_COPY = {
     firstLetterTab: '1.ª LETRA',
     writeTab: 'ESCRIBIR',
     verseLoading: 'El texto del versículo se cargará desde YouVersion.',
+    confirmLanguage: 'Descargar traducción y continuar', downloadingTitle: 'Preparando Apocalipsis para estudiar sin conexión', downloadingProgress: 'Versículos descargados:', downloadingHelp: 'Mantén esta página abierta durante la descarga.', downloadProblem: 'No se pudo descargar la traducción', downloadFailed: 'La descarga falló. Inténtalo de nuevo.', needInternet: 'Conéctate a internet para descargar esta traducción.', connectToDownload: 'Conéctate a internet e inténtalo de nuevo.', retry: 'Reintentar',
+    downloadChapter: 'Descargar', notDownloaded: 'NO DESCARGADO', chapterNotDownloaded: 'no descargado', downloadingChapter: 'DESCARGANDO',
   },
 };
 
