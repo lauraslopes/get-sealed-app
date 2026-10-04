@@ -12,7 +12,7 @@ export default function ActivityReadScreen({ language }) {
 
   return (
     <main className="page card">
-      <button type="button" onClick={() => navigate(-1)}>{copy.back}</button>
+      <button type="button" onClick={() => navigate('/study/')}>{copy.back}</button>
       <StudyTabs currentStage="read" language={language} />
       <small className="muted">{copy.stageOne}</small>
       <h1>{copy.revelation} {verseId}</h1>
